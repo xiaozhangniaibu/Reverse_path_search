@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Path2/Offset1
+        - /reverse_path1/Offset1
       Splitter Ratio: 0.5
     Tree Height: 549
   - Class: rviz/Selection
@@ -61,7 +61,7 @@ Visualization Manager:
       Length: 0.30000001192092896
       Line Style: Lines
       Line Width: 0.029999999329447746
-      Name: Path
+      Name: orin_path
       Offset:
         X: 0
         Y: 0
@@ -133,7 +133,7 @@ Visualization Manager:
       Length: 0.30000001192092896
       Line Style: Lines
       Line Width: 0.029999999329447746
-      Name: Path
+      Name: reverse_path
       Offset:
         X: 0
         Y: 0

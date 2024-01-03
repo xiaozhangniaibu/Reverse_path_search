@@ -1,7 +1,4 @@
-<!-- combined_launch.launch -->
-
 <launch>
-
   <!-- Run pub_path_ node -->
   <node pkg="reverse_path_search" type="pub_path_" name="pub_path_node" output="screen" />
 
@@ -9,7 +6,7 @@
   <node pkg="reverse_path_search" type="path_optimization_node_" name="path_optimization_node" output="screen" />
 
   <!-- Play the bag file -->
-  <node name="rosbag_play" pkg="rosbag" type="play" args="$(find reverse_path_search)/bags/bag_2023-12-29-00-06-12.bag"  />
+  <node name="rosbag_play" pkg="rosbag" type="play" args="-r 3 $(find reverse_path_search)/bags/bag_2023-12-29-00-06-12.bag"  />
 
   <!-- Launch RViz with the configuration file from the package's rviz folder -->
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find reverse_path_search)/rviz/path.rviz" required="true" />
